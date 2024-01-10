@@ -10,7 +10,7 @@ After login, users access a dynamic home page. The app offers a dark/light theme
 ## Getting Started
 
 ### Deployment
-This Project is **[Live](https://reg-login-using-nodejs-mongodb.herokuapp.com/)** on: 🌍 **https://reg-login-using-nodejs-mongodb.herokuapp.com/**
+This Project is **[Live](https://mirage-mingle.onrender.com)** on: 🌍 **https://mirage-mingle.onrender.com**
 
 ## Running the tests
 
