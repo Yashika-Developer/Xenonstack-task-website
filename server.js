@@ -6,15 +6,15 @@ var mongoose = require('mongoose');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session); 
 mongoose.connect('mongodb+srv://ybajaj256:Yashika1@loginpage.m966jes.mongodb.net/', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}, (err) => {
-  if (!err) {
-    console.log('MongoDB Connection Succeeded.');
-  } else {
-    console.log('Error in DB connection : ' + err);
-  }
-});
+        useNewUrlParser:true,
+        useUnifiedTopology: true,
+    })
+    .then(() => console.log("Database Connection is Successful"))
+    .catch( (error) => {
+        console.log("Issue in Database Connection");
+        console.error(error.message);
+        process.exit(1);
+    } );
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
