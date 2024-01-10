@@ -17,9 +17,7 @@ mongoose.connect('mongodb+srv://ybajaj256:Yashika1@loginpage.m966jes.mongodb.net
     } );
 
 var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function () {
-});
+
 
 app.use(session({
   secret: 'work hard',
