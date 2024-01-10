@@ -5,7 +5,14 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
-
+var cors = require('cors');
+app.use(cors(
+  {
+    origin:["https://mirage-mingle.onrender.com"],
+    methods:["POST" ,"GET"],
+    credentials:true
+  }
+  ));  
 mongoose.connect('mongodb+srv://ybajaj256:Yashika1@loginpage.m966jes.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
